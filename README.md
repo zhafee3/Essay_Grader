@@ -1,0 +1,41 @@
+# Essay Grading System
+
+## Project Overview
+This project consists of a Python-based essay grading system that evaluates essays based on sentence length, spelling mistakes, and grammatical correctness. The system is structured into several modules that handle specific aspects of the grading process.The essay grading system  includes enhanced evaluations for sentence coherence, relevance to the essay prompt, and improved grammar analysis. The system leverages advanced NLP techniques for deeper analysis and a more accurate grading system.
+
+## Project Files & Functions
+
+### `count.py`
+- **`count_sentences`**: Enhanced to use NLP techniques for more accurate sentence boundary detection.
+- **`count_misspelled_words`**: Utilizes a comprehensive dictionary to identify and count spelling mistakes.
+
+### `score.py`
+- **`score_spelling`**: Refined scoring logic that adjusts the score based on the severity and frequency of spelling errors.
+- **`score_length`**: Updated to award scores based on comparative essay length analysis against a dataset average.
+- **`score_syntax`**: New function that evaluates syntactical structures and penalizes common grammatical errors.
+- **`map_score_to_grade`**: Updated mapping function that adjusts thresholds for grade determination.
+
+### `grade.py`
+- **`pTag`**: Enhanced POS tagging with spaCy for more accurate grammatical analysis.
+- **`evaluate_sentences`**: Analyzes each sentence for structural and grammatical integrity.
+- **`essay_coherence`**: Measures the logical flow and coherence between sentences using vector embeddings.
+- **`topic_relevance`**: New function that assesses the relevance of the essay content to the provided prompt using cosine similarity.
+- **`relevance_Score`**: New function that converts raw score of essay relevance to scalr 1-5 point scale of essay relevance.
+
+### `run_project.py`
+- Main script updated to incorporate new analytical functions and produce a detailed grading report for each essay. It reads essay data from `index.csv`, processes each essay through the enhanced grading functions, and outputs the results.
+
+## Packages Used
+- **nltk**
+- **spaCy**
+- **numpy**
+- **scipy**
+- **pandas**
+- **os**
+
+## Setup and Execution and sample output
+To run this project, ensure that you have Python installed along with the necessary packages. Place all project files in the same directory and execute `run_project.py` from the terminal or command prompt:
+```bash
+python run_project.py
+
+Filename: 1004355.txt, Expected Grade: low, Calculated Grade: low, Sentence Score: 4, Spelling Score: 2, Grammar Score: 2, Syntax Score: 2, Relevance Score: 5, Total Score: 27
