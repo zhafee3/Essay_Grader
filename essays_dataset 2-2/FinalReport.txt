@@ -1,0 +1,27 @@
+Zakareah Hafeez : 664465667
+Khadija Hussain : 676250705
+
+Reflecting upon our project, we would like to discuss specific methods we used to develop our grader, 
+what we learned from developing a speech/text identifying algorithm, limitations we found along the way, 
+and areas of improvement for the project and to the algorithm itself. Methods we used to develop our algorithm included 
+creating a method to read in individual essay’s from the essay folder,  nltk, pos tagging, scipy, spacy, spellcheck, 
+embeddings, and cosine similarity analysis. Nltk was utilized to tokenize words and tag them so that further grammar 
+and syntax analysis could be executed. Scipy allowed for cosine similarity to be executed, which was then saved and used
+later for coherence testing as well as essay topic relevance testing. Code was organized in functions relevant to the 
+method being developed (i.e functions created for spell checking, topic relevance, etc.) and a corresponding raw score 
+to scaled score (1 to 5 pt system) was developed for each method. Finally, the overall essay grade was established by 
+utilizing the formula given by the professor, this formula utilized the scalar score of each respected functionality and 
+mapped the score to either a high or low grade, with 28  and above being the threshold for high, and everything lower 
+being a low score. This project allowed for us to learn the structural factors required to be developed when creating an 
+objective speech/text grader. Although the basis of what can be considered a high/low grade essay is objective, we tried
+our best to grade these structural elements to the best of our ability standardly. Two of the biggest limitations we 
+found when developing our grader was the limitation in grade options (only having high or low as a grade) and the overall
+grading function. The limitation in only having two grading options becomes a problem when grading an essay because that
+assumes that an essay scored a point or two below the threshold automatically goes from a high graded essay to a low
+essay , objectively there lies a problem. If the graded system included middle level grades rather than just two options,
+we believe the results would have been better and more consistent. The overall formula that calculated grade was also seen
+as a limitation, since certain scores were multiplied giving certain functionality more priority when answering the objective
+question of “is the essay high or low graded”. Lastly, we found our work able to complete project requirements and match the 
+expected grade with the calculated grade. Our results remained consistent with project expectations, we learned much 
+from this project and have finished with a better understanding of text/speech recognition. 
+
