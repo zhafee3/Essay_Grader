@@ -1,11 +1,7 @@
 # Essay Grading System
 
-## Team Members
-- **Teammate 1 Khadija Hussain** - 676250705
-- **Teammate 2 Zakareah Hafeez** - 664465667
-
 ## Project Overview
-This updated version of the essay grading system now includes enhanced evaluations for sentence coherence, relevance to the essay prompt, and improved grammar analysis. The system leverages advanced NLP techniques for deeper analysis and a more accurate grading system.
+This project consists of a Python-based essay grading system that evaluates essays based on sentence length, spelling mistakes, and grammatical correctness. The system is structured into several modules that handle specific aspects of the grading process.The essay grading system  includes enhanced evaluations for sentence coherence, relevance to the essay prompt, and improved grammar analysis. The system leverages advanced NLP techniques for deeper analysis and a more accurate grading system.
 
 ## Project Files & Functions
 
